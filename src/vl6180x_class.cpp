@@ -3072,11 +3072,11 @@ int VL6180X::InitSensor(uint8_t NewAddr)
             return status;
          }
       }
-      else
-      {
-         printf("Invalid new address!\n\r");
-         return INVALID_PARAMS;
-      }
+      // else
+      // {
+      //    Serial.println("Invalid new address!\n\r");
+      //    return INVALID_PARAMS;
+      // }
       Device->Ready=1;
    }
    return status; 
